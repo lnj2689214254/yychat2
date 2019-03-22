@@ -1,0 +1,20 @@
+package com.yychatserver.control;
+
+import java.io.IOException;
+import java.net.Socket;
+import java.net.UnknownHostException;
+
+public class ClientConnet {
+	Socket s;
+        public void ClientConnect(){
+        	try {
+				new Socket("127.0.0.1",3456);
+			} catch (UnknownHostException e) {
+				
+				e.printStackTrace();
+			} catch (IOException e) {
+				e.printStackTrace();
+			}
+        	
+        }
+}
